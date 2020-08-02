@@ -90,104 +90,104 @@ export default function FormPage() {
             </div>
           </div>
         </div>
-      </div>
-      <hr className="mt-8 bg-gray-700" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div>
-          <h3 className="text-lg font-semibold">Thông tin nhóm lại</h3>
-          <span className="text-gray-500 text-opacity-75">
-            Nhóm nhỏ, thời gian bạn sinh hoạt tại Ban thanh niên Gia Định
-          </span>
-        </div>
-        <div className="">
-          <div className="flex flex-col">
-            <label className="text-lg">Nhóm nhỏ</label>
-            <div className="grid grid-cols-5 gap-2 mt-2">
-              {Array.apply(null, { length: 15 })
-                .map(Number.call, Number)
-                .map((i) => (
-                  <span className="bg-gray-600 rounded p-2 text-white">
-                    {i + 1}
-                  </span>
-                ))}
-            </div>
-          </div>
-          <div className="flex flex-col mt-8">
-            <label className="text-lg">Thời gian nhóm lại</label>
-            <div className="grid grid-cols-2 gap-2 mt-2">
-              {["Dưới 3 tháng", "Trên 3 tháng"].map((size) => (
-                <span className="bg-gray-600 rounded p-2 text-white">
-                  {size}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr className="mt-8 bg-gray-700" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div>
-          <h3 className="text-lg font-semibold">Lệ Phí</h3>
-          <span className="text-gray-500 text-opacity-75">
-            Thông tin đóng cọc, cách đóng lệ phí
-          </span>
-        </div>
-        <div className="">
-          <div className="flex flex-col">
-            <label className="text-lg">Mức lệ phí</label>
-            <div className="grid grid-cols-1 gap-2 mt-2">
-              {[
-                "Tiền cọc: 400.000đ",
-                "Sinh viên, thu nhập dưới 3 triệu: 700.000đ",
-                "Thu nhập 3-5 triệu: 950.000đ",
-                "Thu nhập trên 5-7 triệu: 1.150.000đ",
-                "Thu nhập trên 7 triệu: 1.350.000đ",
-              ].map((text) => (
-                <span className="bg-gray-600 rounded p-2 text-white">
-                  {text}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col mt-8">
-            <label className="text-lg">Dâng hiến:</label>
-            <input
-              className="h-16 rounded text-2xl p-4 mt-2"
-              type="text"
-              name="phoneNumber"
-              placeholder="Nhập số tiền dâng..."
-            />
-          </div>
-          <div className="flex flex-col mt-8">
-            <label className="text-lg">Thời gian nhóm lại</label>
-            <div className="grid grid-cols-2 gap-2 mt-2">
-              {["Dưới 3 tháng", "Trên 3 tháng"].map((size) => (
-                <span className="bg-gray-600 rounded p-2 text-white">
-                  {size}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col mt-8">
-            <label className="text-lg">Hình thức nộp lệ phí</label>
-            <div className="grid grid-cols-2 gap-2 mt-2">
-              {[
-                "Nộp trực tiếp cho Ban Tổ Chức",
-                "Nộp cho nhóm trưởng (tiền mặt)",
-              ].map((size) => (
-                <span className="bg-gray-600 rounded p-2 text-white">
-                  {size}
-                </span>
-              ))}
-            </div>
+        <hr className="mt-8 bg-gray-700" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div>
+            <h3 className="text-lg font-semibold">Thông tin nhóm lại</h3>
             <span className="text-gray-500 text-opacity-75">
-              Chi tiết về việc đăng ký liên hệ Thủ quỹ Ban Thanh Niên: Như Ngọc
-              0902457367
+              Nhóm nhỏ, thời gian bạn sinh hoạt tại Ban thanh niên Gia Định
             </span>
           </div>
+          <div className="">
+            <div className="flex flex-col">
+              <label className="text-lg">Nhóm nhỏ</label>
+              <div className="grid grid-cols-5 gap-2 mt-2">
+                {Array.apply(null, { length: 15 })
+                  .map(Number.call, Number)
+                  .map((i) => (
+                    <span className="bg-gray-600 rounded p-2 text-white">
+                      {i + 1}
+                    </span>
+                  ))}
+              </div>
+            </div>
+            <div className="flex flex-col mt-8">
+              <label className="text-lg">Thời gian nhóm lại</label>
+              <div className="grid grid-cols-2 gap-2 mt-2">
+                {["Dưới 3 tháng", "Trên 3 tháng"].map((size) => (
+                  <span className="bg-gray-600 rounded p-2 text-white">
+                    {size}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
+        <hr className="mt-8 bg-gray-700" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div>
+            <h3 className="text-lg font-semibold">Lệ Phí</h3>
+            <span className="text-gray-500 text-opacity-75">
+              Thông tin đóng cọc, cách đóng lệ phí
+            </span>
+          </div>
+          <div className="">
+            <div className="flex flex-col">
+              <label className="text-lg">Mức lệ phí</label>
+              <div className="grid grid-cols-1 gap-2 mt-2">
+                {[
+                  "Tiền cọc: 400.000đ",
+                  "Sinh viên, thu nhập dưới 3 triệu: 700.000đ",
+                  "Thu nhập 3-5 triệu: 950.000đ",
+                  "Thu nhập trên 5-7 triệu: 1.150.000đ",
+                  "Thu nhập trên 7 triệu: 1.350.000đ",
+                ].map((text) => (
+                  <span className="bg-gray-600 rounded p-2 text-white">
+                    {text}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col mt-8">
+              <label className="text-lg">Dâng hiến:</label>
+              <input
+                className="h-16 rounded text-2xl p-4 mt-2"
+                type="text"
+                name="phoneNumber"
+                placeholder="Nhập số tiền dâng..."
+              />
+            </div>
+            <div className="flex flex-col mt-8">
+              <label className="text-lg">Thời gian nhóm lại</label>
+              <div className="grid grid-cols-2 gap-2 mt-2">
+                {["Dưới 3 tháng", "Trên 3 tháng"].map((size) => (
+                  <span className="bg-gray-600 rounded p-2 text-white">
+                    {size}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col mt-8">
+              <label className="text-lg">Hình thức nộp lệ phí</label>
+              <div className="grid grid-cols-2 gap-2 mt-2">
+                {[
+                  "Nộp trực tiếp cho Ban Tổ Chức",
+                  "Nộp cho nhóm trưởng (tiền mặt)",
+                ].map((size) => (
+                  <span className="bg-gray-600 rounded p-2 text-white">
+                    {size}
+                  </span>
+                ))}
+              </div>
+              <span className="text-gray-500 text-opacity-75">
+                Chi tiết về việc đăng ký liên hệ Thủ quỹ Ban Thanh Niên: Như
+                Ngọc 0902457367
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr className="mt-8 bg-gray-700" />
       </div>
-      <hr className="mt-8 bg-gray-700" />
     </div>
   );
 }
