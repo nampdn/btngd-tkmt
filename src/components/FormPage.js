@@ -76,7 +76,26 @@ export default function FormPage() {
             </div>
             <div className="flex flex-col mt-8">
               <label className="text-lg">Ngày sinh</label>
-              <ReactDateInputs className="w-8" />
+              <div className="grid grid-cols-3 gap-2 mt-2">
+                <input
+                  className="h-16 rounded text-2xl p-4 mt-2"
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="01"
+                />
+                <input
+                  className="h-16 rounded text-2xl p-4 mt-2"
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="04"
+                />
+                <input
+                  className="h-16 rounded text-2xl p-4 mt-2"
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="1996"
+                />
+              </div>
             </div>
             <div className="flex flex-col mt-8">
               <label className="text-lg">Size áo</label>
